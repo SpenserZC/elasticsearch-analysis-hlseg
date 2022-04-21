@@ -13,7 +13,7 @@ import com.hylanda.utils.SegTools;
 public class HLSegTokenizerFactory extends AbstractTokenizerFactory {
 
 	public HLSegTokenizerFactory(IndexSettings indexSettings, Environment env, String name, Settings settings) {
-		super(indexSettings, name, settings);
+		super(indexSettings, settings,name);
 		SegTools.loaddict(env);
 	}
 
